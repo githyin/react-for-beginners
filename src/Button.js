@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import styles from "./Button.module.css";
 
-function Button({ onClick }) {
+function Button({ onClick, text }) {
   return (
     <button className={styles.btn} onClick={onClick}>
-      Click
+      {text}
     </button>
   );
 }
